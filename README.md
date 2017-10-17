@@ -2,8 +2,6 @@
 
 ## Overview
 
-![](./images/lab3.png)
-
 ### Read the Objectives
 
 By the end of this module, you should be able to:
