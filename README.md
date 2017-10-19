@@ -1,36 +1,27 @@
 # Objectives
 
-## Overview
-
-![](./images/lab3.png)
-
 ### Read the Objectives
 
 By the end of this module, you should be able to:
 
 * Create a C program that sends temperature data to the gateway via MQTT and also display it on LCD
 
-
 # Creating an MQTT Service to Publish the Temperature Sensor Data
 
 ## Plug in the Grove shield, temperature sensor and the LCD
 
-![](./images/temperature-sensors-arduino.jpg)
-
-In the Sensors and Actuators lab, we connected the temperature sensor (Analog) and LCD display (I2C) to your Arduino* 101. We wrote C code to measure the temperature in Celsius using upm library, convert it to Fahrenheit, then display it on the LCD.
+In the Sensors and Actuators lab, we connected the temperature sensor (Analog) and LCD display (I2C) to your sensor hub device. We wrote C code to measure the temperature in Celsius using upm library, convert it to Fahrenheit, then display it on the LCD.
 
 Your project should start looking like the picture on the right.
 
-1. Install the Grove Base Shield onto the Arduino* 101 Arduino expansion board.
+1. Install the Grove Base Shield onto the sensor computer device (For this lab, this will be either a Up2 Board or a NUCi7).
 2. Connect **Grove Temperature Sensor** to analog pin **A0** of the Grove Base Shield.
 3. Connect **Grove LCD** display to one of the **I2C** pins.
 
 ## Start a new C program to add MQTT feature to our earlier temperature module
 
-![](./images/new-project.png)
-
-1. In your home directory "labs" folder in path "/home/nuc-user/labs" create a new folder "protocols" and under it another folder named "mqtt"
-2. In /home/nuc-user/labs/protocols/mqtt folder create a C file temperature_mqtt.c.
+1. Create a new project directory.
+2. Create a C file named temperature_mqtt.c.
 
 This temperature project will be used in all the later labs to supply a steady stream of data.
 
