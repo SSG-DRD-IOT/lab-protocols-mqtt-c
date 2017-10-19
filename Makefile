@@ -23,7 +23,7 @@
 all:	temperature_mqtt
 
 temperature_mqtt:	temperature_mqtt.c
-	gcc temperature_mqtt.c -o temperature_mqtt -I/usr/include/upm -lupmc-temperature -lupmc-utilities -lmraa -lm -lupm-jhd1313m1 -lupmc-jhd1313m1 -lupm-lcm1602 -lupmc-lcm1602 -lpaho-mqtt3c
+	gcc temperature_mqtt.c -o temperature_mqtt -I/usr/include/upm -lupmc-temperature -lupmc-utilities -lmraa -lm -lupm-jhd1313m1 -lupmc-jhd1313m1 -lupm-lcm1602 -lupmc-lcm1602 -lpaho-mqtt3c -ljson-c
 
 clean:
 	rm -rf temperature_mqtt
