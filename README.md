@@ -124,6 +124,7 @@ Update **temperature_mqtt.c** with following changes
     ```
 
 8. Below is the final complete code:
+
 ```c
   #include <sys/time.h>
   #include <json-c/json.h>
