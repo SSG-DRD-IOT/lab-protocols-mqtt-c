@@ -123,7 +123,7 @@ Update **temperature_mqtt.c** with following changes
     printf("Message with delivery token %d delivered\n", token);
     ```
 
-8. Here is a link to the [final code](https://github.com/SSG-DRD-IOT/lab-protocols-mqtt-c/edit/master/temperature_mqtt.c).
+8. **Here is a link to the [final code](https://raw.githubusercontent.com/SSG-DRD-IOT/lab-protocols-mqtt-c/master/temperature_mqtt.c).**
 
 ## Build and Run your C program
 
