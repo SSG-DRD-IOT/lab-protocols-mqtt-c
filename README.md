@@ -238,7 +238,7 @@ Update **temperature_mqtt.c** with following changes
          char *tempur = "temperature";
          char *value  = "value";
          char *timet   = "timestamp";
-         struct json_object \*jobj;
+         struct json_object *jobj;
          jobj = json_object_new_object();
          json_object_object_add(jobj, sensor, json_object_new_string(tempur));
          json_object_object_add(jobj, value, json_object_new_string(snum));
