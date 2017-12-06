@@ -207,7 +207,7 @@ Update **temperature_mqtt.c** with following changes
 
   ```
 
-10. **Here is a link to the [final code](https://raw.githubusercontent.com/SSG-DRD-IOT/lab-protocols-mqtt-c/master/temperature_mqtt.c).**
+10. **Here is a link to the [final code](https://github.com/SSG-DRD-IOT/lab-protocols-mqtt-c/tree/master/_cmake/sketch/temperature_mqtt.ino.cpp).**
 
 ## Build and Run your C program
 
