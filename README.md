@@ -4,9 +4,9 @@
 
 By the end of this module, you should be able to:
 
-* Create a C program that sends temperature data via MQTT and also display it on LCD
+* Create a C program that sends temperature & humidity data via MQTT and also displays it on LCD
 
-# Creating an MQTT Service to Publish the Temperature Sensor Data
+# Creating an MQTT Service to Publish the Temperature & Humidity Sensor Data
 
 ## Plug in the Grove shield, temperature & humidity sensor and the LCD
 
