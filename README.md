@@ -256,6 +256,12 @@ and
 ```
 You've completed the service that will publish temperature data to the gateway. See the Debugging MQTT section in the sidebar under Additional Information for information on how to verify that MQTT traffic is indeed being published.
 
-# Additional Resources
+## Solution
+
+Click here to go to the [Lab Solution](https://create.arduino.cc/editor/danielholmlund/9e7db817-7f75-4cdc-b3b8-0b97a30f1ae4/preview).
+
+https://create.arduino.cc/editor/danielholmlund/9e7db817-7f75-4cdc-b3b8-0b97a30f1ae4/preview
+
+## Additional Resources
 
 * [MQTT](http://mqtt.org/)
