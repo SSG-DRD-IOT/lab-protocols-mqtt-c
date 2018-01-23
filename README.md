@@ -258,9 +258,9 @@ You've completed the service that will publish temperature data to the gateway. 
 
 ## Solution
 
-Click here to go to the [Lab Solution](https://create.arduino.cc/editor/danielholmlund/9e7db817-7f75-4cdc-b3b8-0b97a30f1ae4/preview).
+Click here to go to the [Lab Solution](https://create.arduino.cc/editor/danielholmlund/11194965-2c77-4d59-9849-8a79423c047f/preview).
 
-https://create.arduino.cc/editor/danielholmlund/9e7db817-7f75-4cdc-b3b8-0b97a30f1ae4/preview
+https://create.arduino.cc/editor/danielholmlund/11194965-2c77-4d59-9849-8a79423c047f/preview
 
 ## Additional Resources
 
