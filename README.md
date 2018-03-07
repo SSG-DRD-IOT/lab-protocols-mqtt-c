@@ -76,9 +76,10 @@ Update **temperature_mqtt.c** with following changes
       printf("Failed to start connect, return code %d\n", rc);
       exit(EXIT_FAILURE);
     }
-  ```
+    ```
 
 4.  Next create the call back functions connLost, onConnect, and onConnectFailure for MQTT above the main function.
+  
   ```c
     void connLost(void *context, char *cause) {
       MQTTAsync client = (MQTTAsync)context;
