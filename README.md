@@ -80,7 +80,7 @@ Update **temperature_mqtt.c** with following changes
 
 4.  Next create the call back functions connLost, onConnect, and onConnectFailure for MQTT above the main function.
   
-  ```c
+```c
     void connLost(void *context, char *cause) {
       MQTTAsync client = (MQTTAsync)context;
       MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
@@ -104,11 +104,13 @@ Update **temperature_mqtt.c** with following changes
     void onConnect(void* context, MQTTAsync_successData* response) {
       printf("Successful connection\n");
     }
-	```
+```
+
 5.  Upload the sketch to the device and see if you get a successful connection in the Monitor serial port.
 
 6.  We are going to use JSON to as our message format to publish via MQTT.  Include the JSON-C library in your sketch
-	```c
+	
+```c
     // JSON-C - Version: Latest
     #include <ArduinoJsonC.h>
     #include <json-c/json.h>
@@ -122,9 +124,11 @@ Update **temperature_mqtt.c** with following changes
     #include "th02.hpp"
     #include "upm_utilities.h"
     #include "jhd1313m1.h"
-  ```
+ ```
+  
 7.  We now need to fill in the messages with the proper data.  We will grab the system time and append it to the message for temperature and humidity.  After we write to the LCD let's add the JSON objects.
-  ```c
+ 
+```c
   // Create JSON Objects for MQTT
   char cnum[13];
   sprintf(cnum, "%3.7f", celsius);
@@ -153,9 +157,11 @@ Update **temperature_mqtt.c** with following changes
   json_object_object_add(jobj_2, value, json_object_new_string(hnum));
   json_object_object_add(jobj_2, timet, json_object_new_string(snum));
 
-  ```
+```
+
 8.  Now let us publish the JSON objects.  Add the following code below the JSON object code.
-  ```c
+
+```c
     char *str_mqtt;
 
     str_mqtt = (char *) json_object_to_json_string(jobj_1);
@@ -195,10 +201,10 @@ Update **temperature_mqtt.c** with following changes
       usleep(10000L);
     }
 
-  ```
+```
 9.  Let us add the onSend call back function before the main program
 
-  ```c    
+```c    
   void onSend(void* context, MQTTAsync_successData* response) {
 
     printf("Message with token value %d delivery confirmed\n", response->token);
@@ -207,7 +213,7 @@ Update **temperature_mqtt.c** with following changes
     return;
   }
 
-  ```
+```
 
 10. **Here is a link to the [final code](https://github.com/SSG-DRD-IOT/lab-protocols-mqtt-c/tree/master/_cmake/sketch/temperature_mqtt.ino.cpp).**
 
@@ -216,6 +222,7 @@ Update **temperature_mqtt.c** with following changes
 Upload your sketch to the device
 
 You should see messages like below on your Monitor debug serial tab
+
 ```c
 Message with token value 215 delivery confirmed
 Message with token value 216 delivery confirmed
