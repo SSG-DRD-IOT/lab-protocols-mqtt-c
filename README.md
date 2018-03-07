@@ -45,7 +45,7 @@ Update **temperature_mqtt.c** with following changes
 
 2.  Define the MQTT parameters we will use to connect using MQTT protocol. Here ADDRESS is our localhost or ip address of the computer device on port 1883, TOPIC_ONE is sensors/temperature/data on which we will publish the temperature values, and TOPIC_TWO is sensors/humidity/data on which we will publish the humidity values. Let's add a conditional "finished" for use in our call backs.
 
-    ``` c
+    ```c
     #define ADDRESS     "tcp://localhost:1883"
     #define CLIENTID    "MQTTExample"
     #define TOPIC_ONE   "sensors/temperature/data"
@@ -57,7 +57,8 @@ Update **temperature_mqtt.c** with following changes
     ```
 
 3.  In the main function of the program before the while loop first connect to MQTT client with the setup parameters. This is a MQTT asynchronous connection.
-	```c
+    
+    ```c
     MQTTAsync client;
     MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
     int rc;
