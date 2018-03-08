@@ -25,6 +25,10 @@ In the Sensors and Actuators lab, we connected the temperature & humidity sensor
 
 This sensor project will be used in all the later labs to supply a steady stream of data.
 
+## Where is the server? 
+
+In the code below we will be creating an MQTT client and connecting to a local server. The MQTT server - or broker in MQTT terms - is Moquitto. Mosquitto is an open source MQTT message broker that was installed on the gateway and launches automatically on boot and begins listening for incomming messages on port 1883. 
+
 ### Write the C program that will send temperature and humidity data over MQTT
 
 Update **temperature_mqtt.c** with following changes
