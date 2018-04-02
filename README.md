@@ -31,7 +31,7 @@ In the code below we will be creating an MQTT client and connecting to a local s
 
 ### Write the C program that will send temperature and humidity data over MQTT
 
-Update **temperature_mqtt.c** with following changes
+Update **temperature_mqtt.ino** with following changes
 
 1.  We will be using Paho MQTT in the Arduino Create Library for this lab. Under Libraries find Paho MQTT and include it in your program. Here MQTTClient.h is the header file of Paho MQTT C client library implemenation of MQTT protocol. Your includes should look like this.
 
