@@ -21,7 +21,7 @@ In the Sensors and Actuators lab, we connected the temperature & humidity sensor
 1. Create a new sketch in Arduino Create
 2. Rename the sketch to temperature_mqtt.ino.
 3. Delete the base code in the sketch
-4. Copy the contents of the lab-temperature-sensor-c
+4. Copy the contents of the [lab-temperature-sensor-c](https://raw.githubusercontent.com/SSG-DRD-IOT/lab-temperature-humidity-arduino/master/_cmake/sketch/lab_temperature_sensor_c.ino.cpp)
 
 This sensor project will be used in all the later labs to supply a steady stream of data.
 
@@ -31,7 +31,7 @@ In the code below we will be creating an MQTT client and connecting to a local s
 
 ### Write the C program that will send temperature and humidity data over MQTT
 
-Update **temperature_mqtt.c** with following changes
+Update **temperature_mqtt.ino** with following changes
 
 1.  We will be using Paho MQTT in the Arduino Create Library for this lab. Under Libraries find Paho MQTT and include it in your program. Here MQTTClient.h is the header file of Paho MQTT C client library implemenation of MQTT protocol. Your includes should look like this.
 
