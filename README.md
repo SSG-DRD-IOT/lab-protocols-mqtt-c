@@ -194,6 +194,9 @@ Update **temperature_mqtt.ino** with following changes
 
     // Send JSON Object via MQTT
     pubmsg.payload = str_mqtt;
+    pubmsg.payloadlen = strlen(str_mqtt);
+    pubmsg.qos = QOS;
+    pubmsg.retained = 0;
 
     // Publish TOPIC_ONE
     if ((rc = MQTTAsync_sendMessage(client, TOPIC_TWO, &pubmsg, &opts)) != MQTTASYNC_SUCCESS) {
